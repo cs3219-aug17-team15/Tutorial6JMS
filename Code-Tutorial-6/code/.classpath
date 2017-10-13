@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-aerogear-integration.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-amqp-protocol.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-bootstrap.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-commons.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-core-client.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-jboss-as-integration.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-jms-client.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-jms-server.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-journal.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-native.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-ra.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-rest.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-server.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-service-sar.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-spring-integration.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-stomp-protocol.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-tools.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/hornetq-twitter-integration.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/jboss-jms-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/jboss-mc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/jnp-client.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/jnpserver.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/netty.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/proton-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/proton-j-impl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/User/Documents/School/curr/CS3219/hornetq-2.4.0.Final-bin/hornetq-2.4.0.Final/lib/proton-jms.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
