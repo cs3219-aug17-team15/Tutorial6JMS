@@ -13,15 +13,15 @@ public class SimpleChat implements javax.jms.MessageListener {
     private TopicPublisher publisher;
     private TopicConnection connection;
     private String username;
-    
+
     public SimpleChat(String topicName, String username, String password)
             throws Exception {
-                
+
         Properties props = new Properties();
         props.put(Context.INITIAL_CONTEXT_FACTORY, "org.jnp.interfaces.NamingContextFactory");
         props.put(Context.PROVIDER_URL, "jnp://localhost:1099");
         props.put(Context.URL_PKG_PREFIXES, "org.jboss.naming:org.jnp.interfaces");
-        
+
         InitialContext jndi = new InitialContext(props);
 
         // Look up a JMS connection factory
@@ -57,10 +57,10 @@ public class SimpleChat implements javax.jms.MessageListener {
 
         // Start the JMS connection; allows messages to be delivered
         connection.start();
-        
+
         System.out.println(username + " logged in.");
     }
-    
+
     public void set(TopicConnection con, TopicSession pubSess,
             TopicSession subSess, TopicPublisher pub,
             String username) {
@@ -70,8 +70,7 @@ public class SimpleChat implements javax.jms.MessageListener {
         this.publisher = pub;
         this.username = username;
     }
-    
-    @Override
+
     public void onMessage(Message message) {
         try {
             TextMessage textMessage = (TextMessage) message;
@@ -81,18 +80,18 @@ public class SimpleChat implements javax.jms.MessageListener {
             e.printStackTrace();
         }
     }
-    
+
     protected void writeMessage(String text) throws JMSException {
         TextMessage message = pubSession.createTextMessage();
         message.setText(username + " : " + text);
         publisher.publish(message);
     }
-    
+
     public void close() throws JMSException {
         connection.close();
     }
-    
-    public static void main(String[] args) {        
+
+    public static void main(String[] args) {
         if (args.length < 3) {
             System.out.println("Usage: chat <topic> <username> <password>");
             System.out.println("<topic> must be defined in the JMS provider.");
@@ -100,14 +99,14 @@ public class SimpleChat implements javax.jms.MessageListener {
             try {
                 String topic = args[0];
                 String username = args[1];
-                String password = args[2];            
+                String password = args[2];
                 SimpleChat chat = new SimpleChat(topic, username, password);
 
                 BufferedReader commandLine = new java.io.BufferedReader(new InputStreamReader(System.in));
                 while (true) {
                     String s = commandLine.readLine();
                     if (s.equalsIgnoreCase("exit")) {
-                        chat.close(); 
+                        chat.close();
                         break;
                     } else {
                         chat.writeMessage(s);

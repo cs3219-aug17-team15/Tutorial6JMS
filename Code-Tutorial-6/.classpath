@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="code/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="hornetq-2.4.0.Final/lib/hornetq-commons.jar"/>
+	<classpathentry kind="lib" path="hornetq-2.4.0.Final/lib/hornetq-core-client.jar"/>
+	<classpathentry kind="lib" path="hornetq-2.4.0.Final/lib/hornetq-jms-client.jar"/>
+	<classpathentry kind="lib" path="hornetq-2.4.0.Final/lib/jboss-jms-api.jar"/>
+	<classpathentry kind="lib" path="hornetq-2.4.0.Final/lib/jnp-client.jar"/>
+	<classpathentry kind="lib" path="hornetq-2.4.0.Final/lib/netty.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

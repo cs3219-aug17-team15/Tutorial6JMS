@@ -20,7 +20,7 @@ import javax.naming.NamingException;
 /**
  * Matric 1:A0138474X
  * Name   1:Jong Xue Min Shermine
- * 
+ *
  * Matric 2:
  * Name   2:
  *
@@ -37,7 +37,7 @@ public class JmsPipe implements IPipe,MessageListener {
     private QueueReceiver qreceiver;
     private Queue queue;
     private TextMessage msg;
-    
+
     public JmsPipe(String factoryName, String queueName) throws Exception{
     	this.factoryName = factoryName;
     	this.queueName = queueName;
@@ -63,8 +63,7 @@ public class JmsPipe implements IPipe,MessageListener {
         msg = qsession.createTextMessage();
         qcon.start();
     }
-	@Override
-	public void write(Order s) {	
+	public void write(Order s) {
         try {
         	msg.setText(s.toString());
 			qsender.send(msg);
@@ -73,12 +72,10 @@ public class JmsPipe implements IPipe,MessageListener {
 		}
 	}
 
-	@Override
 	public Order read() {
 		return Order.fromString(msg.toString());
 	}
 
-	@Override
 	public void close() {
         try {
         	qsender.close();
@@ -88,7 +85,6 @@ public class JmsPipe implements IPipe,MessageListener {
 			System.err.println("An exception has occurred: " + e.getMessage());
 		}
 	}
-	@Override
 	public void onMessage(Message arg0) {
 	try{
 		if (arg0 instanceof TextMessage) {
@@ -99,7 +95,7 @@ public class JmsPipe implements IPipe,MessageListener {
     } catch (JMSException jmse) {
         System.err.println("An exception occurred: " + jmse.getMessage());
     }
-		
+
 	}
-    
+
 }

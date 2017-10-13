@@ -18,7 +18,6 @@ public class QueueReceive implements MessageListener {
     private Queue queue;
     private boolean quit = false;
 
-    @Override
     public void onMessage(Message msg) {
         try {
             String msgText;
@@ -58,14 +57,14 @@ public class QueueReceive implements MessageListener {
         qcon.close();
     }
 
-    public static void main(String[] args) throws Exception {        
+    public static void main(String[] args) throws Exception {
         InitialContext ic = getInitialContext();
         QueueReceive qr = new QueueReceive();
         qr.init(ic, QUEUE);
 
         System.out.println(
                 "JMS Ready To Receive Messages (To quit, send a \"quit\" message).");
-        
+
         synchronized (qr) {
             while (!qr.quit) {
                 try {
